@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ashiskumardey136-code.github.io/html/sitemap.xml
