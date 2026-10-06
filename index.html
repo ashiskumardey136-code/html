@@ -1,24 +1,117 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Framer Motion Demo - Motion as a Language</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101214" />
+    <meta name="description" content="AshisDigitalHub sets up smarter digital systems: blog accounts, promotional video campaigns, AI automation, professional account settings, and technical support." />
+    <meta property="og:title" content="AshisDigitalHub — Your digital operations, switched on." />
+    <meta property="og:description" content="Fast, practical digital setup and AI automation for creators and growing businesses." />
+    <title>AshisDigitalHub — AI automation that keeps business moving</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101214'/%3E%3Cpath d='M16 42h8V22h-8zm12 0h8V16h-8zm12 0h8V28h-8z' fill='%23d7ff4f'/%3E%3C/svg%3E" />
   </head>
-
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
-  </body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#top" aria-label="AshisDigitalHub home">
+          <span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>ASHIS<span class="wordmark-soft">DIGITAL</span>HUB</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span><b>Menu</b></button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+          <a href="#services">Services</a>
+          <a href="#process">How it works</a>
+          <a href="#why-us">Why ADH</a>
+          <a class="nav-cta" href="#consultation">Start a project <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
 
+      <main id="top">
+        <section class="hero section-wrap" aria-labelledby="hero-title">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span class="status-dot"></span> Digital systems / online</div>
+            <h1 id="hero-title">Your digital operations,<br /><em>switched on.</em></h1>
+            <p class="hero-intro">From blog account setup to AI automation, AshisDigitalHub turns the work behind your growth into a system you can trust.</p>
+            <div class="hero-actions">
+              <a class="button button-lime" href="#consultation">Book a consultation <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#services">Explore services <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-note"><span class="mono">ADH / 001</span><span>Fast setup. Clear support. Built for momentum.</span></div>
+          </div>
+          <div class="hero-visual reveal reveal-delay" aria-label="A graphical representation of an automated digital system">
+            <div class="visual-orbit orbit-a"></div>
+            <div class="visual-orbit orbit-b"></div>
+            <div class="visual-core"><span class="core-label mono">SYSTEM<br />READY</span><span class="core-glyph">ADH</span><span class="core-pulse"></span></div>
+            <div class="signal-card signal-top"><span class="signal-icon">↗</span><span><b>Growth layer</b><small>Always in motion</small></span></div>
+            <div class="signal-card signal-bottom"><span class="signal-icon">⌁</span><span><b>Automation layer</b><small>Less manual work</small></span></div>
+            <div class="visual-cross cross-one">+</div><div class="visual-cross cross-two">+</div>
+          </div>
+          <div class="hero-stats reveal">
+            <div><strong>05</strong><span>core services<br />under one roof</span></div>
+            <div><strong>01</strong><span>clear next step<br />to get moving</span></div>
+            <div><strong>24/7</strong><span>systems designed<br />to keep working</span></div>
+          </div>
+        </section>
+
+        <section class="ticker" aria-label="Service promise">
+          <div class="ticker-track"><span>SET UP SMARTER</span><b>✳</b><span>SAVE TIME</span><b>✳</b><span>PROTECT YOUR DATA</span><b>✳</b><span>GROW WITH CONFIDENCE</span><b>✳</b><span>SET UP SMARTER</span><b>✳</b><span>SAVE TIME</span></div>
+        </section>
+
+        <section class="services section-wrap" id="services" aria-labelledby="services-title">
+          <div class="section-intro reveal"><span class="section-number">01</span><div><div class="eyebrow">What we activate</div><h2 id="services-title">The right setup<br /><em>changes everything.</em></h2></div></div>
+          <div class="services-layout">
+            <p class="section-lede reveal">Good digital work should feel lighter after it is done. We take the technical setup, promotion, and ongoing support off your plate so you can focus on the part only you can do.</p>
+            <div class="service-list">
+              <article class="service-card reveal"><div class="service-index mono">01 / SETUP</div><div class="service-icon">◎</div><h3>Blog account setup</h3><p>Get your blog, profile, and publishing foundation organized correctly from day one.</p><a href="#consultation" aria-label="Ask about blog account setup">Configure a better start <span>↗</span></a></article>
+              <article class="service-card service-card-dark reveal reveal-delay"><div class="service-index mono">02 / PROMOTE</div><div class="service-icon">▶</div><h3>Advertising video promotion</h3><p>Turn attention into action with professional promotional video direction built for social feeds.</p><a href="#consultation" aria-label="Ask about advertising video promotion">Put your offer in motion <span>↗</span></a></article>
+              <article class="service-card reveal"><div class="service-index mono">03 / CONTROL</div><div class="service-icon">⌘</div><h3>Professional account settings</h3><p>Clean up the details, permissions, and settings that make your digital presence look credible.</p><a href="#consultation" aria-label="Ask about professional account settings">Make every detail count <span>↗</span></a></article>
+              <article class="service-card service-card-lime reveal reveal-delay"><div class="service-index mono">04 / AUTOMATE</div><div class="service-icon">⌁</div><h3>AI automation systems</h3><p>Connect repeatable tasks so your business can respond faster, save time, and keep data moving.</p><a href="#consultation" aria-label="Ask about AI automation systems">Build the engine <span>↗</span></a></article>
+              <article class="service-card service-card-wide reveal"><div class="service-index mono">05 / SUPPORT</div><div class="service-icon">+</div><div><h3>High-technology technical support</h3><p>When something gets stuck, get a clear answer and a practical path forward — without the technical fog.</p></div><a href="#consultation" aria-label="Ask about technical support">Keep momentum <span>↗</span></a></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="statement section-wrap" aria-labelledby="statement-title">
+          <div class="statement-line"></div>
+          <div class="statement-content reveal"><span class="quote-mark">“</span><h2 id="statement-title">Build the system once.<br /><em>Win back the hours.</em></h2><p>Every hour you save on setup and repeat work is an hour you can put back into creating, selling, and growing.</p></div>
+          <div class="statement-side mono reveal">TIME / DATA / GROWTH<br /><span>All connected.</span></div>
+        </section>
+
+        <section class="process section-wrap" id="process" aria-labelledby="process-title">
+          <div class="section-intro reveal"><span class="section-number">02</span><div><div class="eyebrow">A simpler way forward</div><h2 id="process-title">From first message<br /><em>to fully switched on.</em></h2></div></div>
+          <div class="process-rail">
+            <article class="process-step reveal"><div class="step-top"><span class="step-number">01</span><span class="mono">CONNECT</span></div><h3>Tell us what is stuck</h3><p>Share the account, workflow, or growth task that is slowing you down.</p></article>
+            <article class="process-step reveal reveal-delay"><div class="step-top"><span class="step-number">02</span><span class="mono">MAP</span></div><h3>Get a clear setup plan</h3><p>We identify the fastest practical route and explain what happens next in plain language.</p></article>
+            <article class="process-step reveal"><div class="step-top"><span class="step-number">03</span><span class="mono">ACTIVATE</span></div><h3>Launch with support</h3><p>Your system goes live, your details are organized, and help is there when you need it.</p></article>
+          </div>
+          <div class="process-footer"><span class="mono">NO TECHNICAL FOG</span><span class="line"></span><span>Just progress you can see.</span></div>
+        </section>
+
+        <section class="why-us section-wrap" id="why-us" aria-labelledby="why-title">
+          <div class="why-visual reveal"><div class="why-grid"></div><div class="why-badge">ADH<br /><span>TRUST<br />PROTOCOL</span></div><div class="why-caption mono">BUILT FOR<br />REAL WORK</div></div>
+          <div class="why-copy reveal reveal-delay"><div class="eyebrow">Why AshisDigitalHub</div><h2 id="why-title">Technical enough<br />for the future.<br /><em>Human enough<br />for today.</em></h2><p>We believe technology should remove friction, not add another layer of confusion. Our work is practical, professional, and focused on the result you need next.</p><div class="assurance-list"><div><span>01</span><b>Fast, focused setup</b><small>Spend less time searching for answers.</small></div><div><span>02</span><b>Data-aware systems</b><small>Build with control and clarity from the start.</small></div><div><span>03</span><b>Support that stays close</b><small>Get help in the language of your business.</small></div></div></div>
+        </section>
+
+        <section class="consultation section-wrap" id="consultation" aria-labelledby="consultation-title">
+          <div class="consultation-copy reveal"><span class="section-number">03</span><div class="eyebrow">Start the conversation</div><h2 id="consultation-title">Ready to put<br /><em>your system to work?</em></h2><p>Tell us what you want to set up, promote, or automate. We will help you find the next best move.</p><div class="consultation-meta"><span class="status-dot"></span><span class="mono">CONSULTATION CHANNEL / OPEN</span></div></div>
+          <form class="consultation-form reveal reveal-delay" id="consultation-form">
+            <div class="form-heading"><span class="mono">INQUIRY / 001</span><span>We reply with a clear next step.</span></div>
+            <label for="name">Your name<input id="name" name="name" type="text" autocomplete="name" placeholder="How should we address you?" required /></label>
+            <label for="email">Email or phone<input id="email" name="email" type="text" autocomplete="email" placeholder="Where can we reach you?" required /></label>
+            <label for="need">What do you need help with?<select id="need" name="need"><option>AI automation system</option><option>Blog account setup</option><option>Advertising video promotion</option><option>Professional account settings</option><option>Technical support</option><option>Not sure yet</option></select></label>
+            <label for="message">A quick note<textarea id="message" name="message" rows="3" placeholder="Tell us what you want to make easier..."></textarea></label>
+            <button class="button button-lime button-submit" type="submit">Send inquiry <span aria-hidden="true">↗</span></button>
+            <p class="form-response" id="form-response" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer section-wrap"><a class="wordmark" href="#top" aria-label="Back to top"><span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>ASHIS<span class="wordmark-soft">DIGITAL</span>HUB</span></a><span class="footer-note">Digital systems for people building what is next.</span><span class="mono footer-meta">© <span id="year"></span> / ADH</span></footer>
+    </div>
+    <script src="/app.js"></script>
+  </body>
 </html>
