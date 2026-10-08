@@ -118,9 +118,10 @@
           <form class="consultation-form reveal reveal-delay" id="consultation-form">
             <div class="form-heading"><span class="mono">INQUIRY / 001</span><span>We reply with a clear next step.</span></div>
             <label for="name">Your name<input id="name" name="name" type="text" autocomplete="name" placeholder="How should we address you?" required /></label>
-            <label for="email">Email or phone<input id="email" name="email" type="text" autocomplete="email" placeholder="Where can we reach you?" required /></label>
+            <label for="email">Email or phone<input id="email" name="contact" type="text" autocomplete="email" placeholder="Where can we reach you?" required /></label>
             <label for="need">What do you need help with?<select id="need" name="need"><option>AI automation system</option><option>Blog account setup</option><option>Advertising video promotion</option><option>Professional account settings</option><option>Technical support</option><option>Not sure yet</option></select></label>
             <label for="message">A quick note<textarea id="message" name="message" rows="3" placeholder="Tell us what you want to make easier..."></textarea></label>
+            <label class="visually-hidden" for="website">Website<input id="website" name="website" type="text" tabindex="-1" autocomplete="off" /></label>
             <button class="button button-lime button-submit" type="submit">Send inquiry <span aria-hidden="true">↗</span></button>
             <p class="form-response" id="form-response" role="status" aria-live="polite"></p>
           </form>

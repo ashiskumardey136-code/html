@@ -29,9 +29,27 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 
-form?.addEventListener('submit', (event) => {
+form?.addEventListener('submit', async (event) => {
   event.preventDefault();
+  const button = form.querySelector('button[type="submit"]');
   const name = form.elements.name.value.trim();
-  response.textContent = `Thanks${name ? `, ${name}` : ''}. Your inquiry is ready — we will reply with a clear next step.`;
-  form.reset();
+  response.textContent = 'Saving your inquiry securely…';
+  button.disabled = true;
+
+  try {
+    const payload = Object.fromEntries(new FormData(form).entries());
+    const result = await fetch('/api/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    const data = await result.json();
+    if (!result.ok) throw new Error(data.error || 'Unable to save inquiry');
+    response.textContent = `Thanks${name ? `, ${name}` : ''}. Your inquiry is saved — we will reply with a clear next step.`;
+    form.reset();
+  } catch (error) {
+    response.textContent = error.message || 'Something went wrong. Please try again.';
+  } finally {
+    button.disabled = false;
+  }
 });
