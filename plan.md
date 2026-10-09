@@ -1,7 +1,7 @@
 # AshisDigitalHub AI Automation — Implementation Plan
 
 ## Product scope
-A responsive one-page promotional website for AshisDigitalHub. It positions the business as a fast, reliable technology partner for blog account setup, advertising video promotion, professional account settings, AI automation system setup, and technical support. The page is optimized for visitors arriving from ads or social media and uses a simple consultation form as its conversion path.
+A responsive one-page promotional website for AshisDigitalHub. It positions the business as a fast, reliable technology partner for blog account setup, advertising video promotion, professional account settings, Android app setup, AI automation system setup, and technical support. The page is optimized for visitors arriving from ads or social media and uses a simple consultation form as its conversion path.
 
 ## Design direction
 - **Design movement:** Editorial cybernetic / Swiss-tech marketing: rigorous type, offset columns, thin rule lines, signal markers, and confident dark surfaces.
@@ -23,6 +23,7 @@ A responsive one-page promotional website for AshisDigitalHub. It positions the 
 - `app.js` — nav toggle, scroll reveal, dynamic year, and inline consultation feedback.
 - `server.js` — small dependency-free static server for the configured port.
 - `public/manus-routes.json` — route manifest for the single-page site.
+- `index.html` Apps section — Android setup pathway plus the supplied official iOS bundle link.
 - `app.config.ts` — project logo metadata for the WebDev checkpoint.
 - `TODO.md` — outcome-based acceptance items.
 
