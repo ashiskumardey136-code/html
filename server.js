@@ -14,6 +14,7 @@ const types = {
   '.svg': 'image/svg+xml',
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
+  '.mp4': 'video/mp4',
   '.ico': 'image/x-icon'
 };
 
@@ -68,6 +69,7 @@ const server = http.createServer(async (request, response) => {
       const contact = String(payload.contact || '').trim().slice(0, 180);
       const need = String(payload.need || 'Not sure yet').trim().slice(0, 120);
       const message = String(payload.message || '').trim().slice(0, 2_000);
+      const landingPage = String(payload.landing_page || url.searchParams.get('landing_page') || '/').trim().slice(0, 500);
       const website = String(payload.website || '').trim();
 
       if (website) return sendJson(response, 200, { ok: true });
@@ -79,7 +81,7 @@ const server = http.createServer(async (request, response) => {
         need,
         message,
         source: 'ashisdigitalhub.com consultation form',
-        landing_page: url.searchParams.get('landing_page') || '/',
+        landing_page: landingPage || '/',
         user_agent: request.headers['user-agent'] || null
       });
       return sendJson(response, 201, { ok: true });

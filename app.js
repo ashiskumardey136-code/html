@@ -29,6 +29,8 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 
+const landingPage = `${window.location.pathname}${window.location.search}`;
+
 form?.addEventListener('submit', async (event) => {
   event.preventDefault();
   const button = form.querySelector('button[type="submit"]');
@@ -37,7 +39,7 @@ form?.addEventListener('submit', async (event) => {
   button.disabled = true;
 
   try {
-    const payload = Object.fromEntries(new FormData(form).entries());
+    const payload = { ...Object.fromEntries(new FormData(form).entries()), landing_page: landingPage };
     const result = await fetch('/api/leads', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
