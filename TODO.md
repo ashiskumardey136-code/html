@@ -6,4 +6,4 @@
 - [x] **Process and trust:** Added a three-step service process plus trust-building copy, service assurances, and customer-focused reasons to choose AshisDigitalHub.
 - [x] **Consultation interaction:** Added a simple inquiry form and direct action options with immediate inline feedback.
 - [x] **Mobile-first presentation:** Verified responsive navigation, typography, layout, form controls, and content hierarchy at desktop and mobile widths.
-- [x] **Apps setup pathway:** Added an Apps section with Android installation/setup support, permission and sign-in readiness guidance, an Android consultation CTA, and the supplied official iOS bundle link for X, Grok, and Grok Bot.
+- [x] **Single-orange high-standard redesign:** Restyled the website around a controlled orange, charcoal, and cream palette with smart visual hierarchy, high-standard setup messaging, and orange project branding.
